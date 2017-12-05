@@ -11,6 +11,6 @@ Single turn utterance to test the availability of the Health Bot
 
 2. Set the following enviorment variable:
 
-3. To invoke the test, call endpoint of this service with /ping?utterance=<utterance>
-
 BOT_SECRET
+
+3. To invoke the test, call endpoint of this service with /ping?utterance=<utterance>
