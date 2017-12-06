@@ -10,8 +10,14 @@ HTTP error 500 will be returned if there is an error. To test success, you will 
 [Deploy Button]: https://azuredeploy.net/deploybutton.png
 [Deploy Node/GetConversationMembers]: https://azuredeploy.net
 
-2. Set the following enviorment variable: WEBCHAT_SECRET. You can obtain this secret from the Health Bot dashboard
+2. Set the following enviorment variable: WEBCHAT_SECRET. 
+![alt text](./webchat_secret2.png "App Settings")
 
-![alt text](webchat_secret.png "Web Chat Secret")
+
+You can obtain this secret from the Health Bot dashboard
+![alt text](./webchat_secret.PNG "Web Chat Secret")
 
 3. To invoke the test, call endpoint of this service with /ping?utterance=hi
+
+For example, to send the "hi" utterance, call the following endpoint with GET method
+https://mypingtest.azurewebsites.net/ping?utterance=hi
