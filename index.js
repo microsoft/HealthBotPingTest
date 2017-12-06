@@ -14,7 +14,7 @@ server.use(restify.plugins.bodyParser());
 
 server.get('/ping', function (req, res, next) {
 
-    if (!process.env.BOT_SECRET) {
+    if (!process.env.WEBCHAT_SECRET) {
         res.send(400, "BOT_SECRET env variable is missing");
         return next();
     }
