@@ -28,7 +28,7 @@ server.get('/ping', function (req, res, next) {
             uri: 'https://directline.botframework.com/v3/directline/conversations',
             headers:
             {
-                Authorization: "Bearer " +  process.env.BOT_SECRET
+                Authorization: "Bearer " +  process.env.WEBCHAT_SECRET
             },
             json: true
         }
@@ -40,7 +40,7 @@ server.get('/ping', function (req, res, next) {
             {
                 uri: uri, method: "POST",
                 headers: {
-                    Authorization: "Bearer " +  process.env.BOT_SECRET
+                    Authorization: "Bearer " +  process.env.WEBCHAT_SECRET
                 },
                 body: {
                     "type": "message",
@@ -58,7 +58,7 @@ server.get('/ping', function (req, res, next) {
                         uri: uri,
                         method: "GET",
                         headers: {
-                            Authorization: "Bearer " +  process.env.BOT_SECRET
+                            Authorization: "Bearer " +  process.env.WEBCHAT_SECRET
                         },
                         json: true
                     }).then(function (data3) {
