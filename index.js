@@ -4,7 +4,7 @@ var restify = require('restify');
 var rp = require('request-promise');
 
 const server = restify.createServer({
-    name: 'myapp',
+    name: 'pingtest',
     version: '1.0.0'
 });
 
@@ -74,6 +74,6 @@ server.get('/ping', function (req, res, next) {
 
     
 
-server.listen(process.env.PORT | 3000, function () {
+server.listen(process.env.APPSETTINGS_PORT, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
