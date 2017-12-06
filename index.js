@@ -74,6 +74,6 @@ server.get('/ping', function (req, res, next) {
 
     
 
-server.listen(process.env.APPSETTINGS_PORT, function () {
+server.listen(process.env.APPSETTING_PORT, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
